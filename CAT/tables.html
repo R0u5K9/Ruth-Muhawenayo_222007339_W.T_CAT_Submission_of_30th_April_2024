@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tables</title>
+	  <style>
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url("img/back2.jpg") no-repeat;
+  background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.head1 {
+  background-color: aquamarine;
+  padding: 20px;
+  }
+  .head1 > a {
+  display: inline-block;
+  font-size: x-large;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  color: #0a0a0b;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: aquamarine;
+  }
+.head {
+  background-color: #077287;
+  padding: 30px;
+}
+
+.head1 p {
+  color: #080900;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+/* Navigation styles */
+.head > a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: x-large;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #077287;
+  transition: background-color 0.3s ease;
+}
+
+.head > a:hover {
+  background-color: #003d80;
+}
+.dropdown{
+    position: right;
+    display: inline-block;
+    direction: ltr;
+}
+.dropdown-contents{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-contents a{
+color: black;
+padding: 12px 18px;
+text-decoration: none;
+display: block;
+}
+.dropdown-contents a:hover{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-contents{
+    display: block;
+}
+#p{
+
+  font-size: xx-large;
+  font-weight: 600;
+  color: #ddd;
+  margin-left: 25px;
+  margin-top: 250px;
+      text-align: center;
+  
+
+}
+
+
+.button{
+    padding: 5px;
+background: lightseagreen;
+text-decoration: none;
+float: right;
+margin-right: 950px;
+margin-top: 10px;
+border-radius: 2px;
+color: #fff;
+font-weight: 600;
+cursor: pointer;
+}
+.button :hover{
+  color: #003d80;
+}
+
+    </style>
+</head>
+</head>
+<body>
+   
+        <div class="head"> 
+        <a href="owner.php">ownersview</a>
+        <a href="lost.php">lost_itemsview</a>
+        <a href="found.php">found_itemsview</a>
+        <a href="status.php">statusview</a>
+        <a href="admin.php">Adminview</a>
+        <div class="button">
+        <li class="dropdown">settings
+            <div class="dropdown-contents">
+                <a href="index.php">logout</a> 
+                </div> 
+        </div>
+      </li>
+      </div>
+
+        <section>
+          <p id="p"> Welcome Admin, you may check information</p>
+        </section>
+</body>
+</html>
